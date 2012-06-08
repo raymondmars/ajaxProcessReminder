@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Test ajax-process-reminder</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="../ajaxProcessReminder.js"></script>
+	<script type="text/javascript">
+	
+	$(function() {
+		$('.submit').ajaxProcessReminder();
+         //$('.submit').ajaxProcessReminder({playerIndex:0,processTxt:'process...'});
+
+         $('#submit').click(function() {
+
+         		$.ajax({
+                 url:'test.php',
+                 type: 'post',
+                 success:function(dt) {
+                 	  console.log(dt);
+                 }
+         		});
+
+         });
+
+	});
+	</script>
+	<style type="text/css">
+	html{margin:0px;padding:0px;}
+	body{
+		margin:0px;
+		padding:0px;
+		
+		font-size:10pt;
+		font-family:arial,verdana;
+	}
+	div#loginpanel{
+		margin:10px;
+	}
+	h1{
+		font-size:1.2em;
+
+	}
+	a.disabled{color:grey;}
+	</style>
+
+</head>
+<body>
+	<div id="loginpanel">
+		<form action="test.php" method="post">
+		</form>
+		
+		<a href="javascript:void(null);" class="submit" id="submit">view data</a>
+         <!--<input type="button" class="submit" id="submit" value="view data" />-->
+	</div>
+</body>
+</html>

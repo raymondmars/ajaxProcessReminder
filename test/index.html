@@ -10,9 +10,7 @@
 	$(function() {
 		$('.submit').ajaxProcessReminder();
          //$('.submit').ajaxProcessReminder({playerIndex:0,processTxt:'process...'});
-
          $('#submit').click(function() {
-
          		$.ajax({
                  url:'test.php',
                  type: 'post',
@@ -20,9 +18,7 @@
                  	  console.log(dt);
                  }
          		});
-
          });
-
 	});
 	</script>
 	<style type="text/css">

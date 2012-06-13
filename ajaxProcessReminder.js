@@ -15,24 +15,23 @@
         	  			case 'A':
         	  			  target.html(param.processTxt);
         	  			  target.addClass('disabled'); 
-                  if(this.clickEvents.length==0) {
-                     $.each(target.data('events'), function(i, event){
-                       $.each(event, function(i, handler){
-                           //console.log( handler);
-                           if(handler.type==='click') {
-                            events.push(handler.handler);
-                           }   
-                       });
-                     });  
-                     this.clickEvents=events;
-                  }
+		                  if(this.clickEvents.length==0) {
+		                     $.each(target.data('events'), function(i, event){
+		                       $.each(event, function(i, handler){
+		                           //console.log( handler);
+		                           if(handler.type==='click') {
+		                            events.push(handler.handler);
+		                           }   
+		                       });
+		                     });  
+		                     this.clickEvents=events;
+		                  };
 			  
         	  			  target.unbind('click');       	  			  
         	  			  
         	  			  break;
         	  			case 'INPUT' :
         	  			  target.val(param.processTxt);
-        	  			  
         	  			  break;
         	  			default:
         	  			  throw 'Invalid tag name, can not be supported.'
@@ -46,12 +45,12 @@
         	  			case 'A':
         	  			  target.html(oldTxt);
         	  			  target.removeClass('disabled');
-                  if(this.clickEvents.length>0) {
-                    target.unbind('click');
-                  }
-                  for(var i=0;i<this.clickEvents.length;i++) {
-                 	   target.bind('click',this.clickEvents[i]);
-                  }
+		                  if(this.clickEvents.length>0) {
+		                    target.unbind('click');
+		                  }
+		                  for(var i=0;i<this.clickEvents.length;i++) {
+		                 	   target.bind('click',this.clickEvents[i]);
+		                  }
         	  			  break;
         	  			case 'INPUT' :
         	  			  target.val(oldTxt);

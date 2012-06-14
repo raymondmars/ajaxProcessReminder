@@ -17,4 +17,5 @@
 	$('.submit').ajaxProcessReminder({player:{
 	   start:function() {console.log('start...');},
 	   end:function() {console.log('end...');}
-	}});
+	}});                                                
+

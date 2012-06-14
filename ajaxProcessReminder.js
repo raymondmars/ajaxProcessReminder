@@ -73,25 +73,54 @@
         	 	}
         	 }];
 
-        	 var options=opt || {   
-        	     processTxt:'process...',  
-        	     processImgUrl:'ajax-loader.gif',   	 	
-        	 	   playerIndex:1
-        	 }
+        	 var options;
+			 if(opt) {
+				 if(typeof opt.player !== 'object' && typeof opt.player !== 'number') {
+					 throw 'player param must be a object or number index.'
+				 } else {
+					 
+					 switch(typeof opt.player) {
+						 case 'number':
+						   if(opt.player===1 && typeof opt.processImgUrl === 'undefined') {
+							 throw 'please set processImgUrl, it will show on overlayer.'
+						   }
+	  					   if(opt.player===0 && typeof opt.processTxt === 'undefined') {
+	  						 opt.processTxt='process...';
+	  					   }
+						   opt.player=players[opt.player];
+						   break;
+						 case 'object':
+						   if(typeof opt.player['start'] !== 'function' || typeof opt.player['end'] !== 'function') {
+							   throw "if you customize player ,you must add 'start' and 'end' function to it."
+						   }
+						   break;
+						 default:
+						   throw 'invalid player.'
+					 }
+
+					 options=opt;
+				 }
+			 } else {
+				 options={
+	        	     processTxt:'process...',  
+	        	     processImgUrl:'ajax-loader.gif',   	 	
+	        	 	   player:players[1]
+				 };
+			 }
 
         	 this.bind('click',function() {
         	 	
         	 		$(this).ajaxStart(function() {
 	        	 		//options.player.start.call($(this),options);
-	        	 		players[options.playerIndex].start($(this),options);
+	        	 		options.player.start($(this),options);
 	        	 	});    	 	
 	        	 	$(this).ajaxComplete(function() {
 	        	 		//options.player.end.call($(this),options);
-	        	 		players[options.playerIndex].end($(this),options);
+	        	 		options.player.end($(this),options);
 	        	 	}); 
         	 	
         	 });
 
         };
 
-	})(jQuery);
+})(jQuery);

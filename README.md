@@ -11,9 +11,9 @@
 * There are two builted-in players:     
   1. it will change the text of button or hyperlinks when you submit a ajax request by it.  
      Hyperlinks:   
-	 <img src="http://outmanone.github.com/images/proj-img/Snip20120614_5.png" style="width:299px;height:48px;border:solid 1px yellow;"/><img src="http://outmanone.github.com/images/proj-img/Snip20120614_6.png" style="width:299px;height:48px;border:solid 1px yellow;"/> 
+	 <img src="http://outmanone.github.com/images/proj-img/Snip20120614_5.png" style="width:299px;height:48px;border:solid 1px yellow;"/><img src="http://outmanone.github.com/images/proj-img/Snip20120614_6.png" style="width:299px;height:48px;border:solid 1px yellow;"/>     
 	 Button:  
-	 !['before'][1.3]  !['starting'][1.4]   
+	 <img src="http://outmanone.github.com/images/proj-img/Snip20120614_7.png" style="width:299px;height:48px;border:solid 1px yellow;"/><img src="http://outmanone.github.com/images/proj-img/Snip20120614_8.png" style="width:299px;height:48px;border:solid 1px yellow;"/>     
   2. it will show a overlayer on the browser window when you submit a ajax request by any element.      
      (the player is default player.)    
 	 

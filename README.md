@@ -14,17 +14,17 @@
 	 !['before'][1.1] --> !['starting'][1.2]   
 	 Button:  
 	 !['before'][1.3] --> !['starting'][1.4]   
-  2. it will show a overlayer on the browser window when you submit a ajax request on any element.     
+  2. it will show a overlayer on the browser window when you submit a ajax request on any element.      
      (the player is default player.)    
 	 
 	 !['starting'][1.5]
 	 
-* You may customize the player of the 'ajaxProcessReminder' and let it work for your idea.     
-  (there is a simple sample like this :)    
-    $('.submit').ajaxProcessReminder({player:{   
-         start:function() {console.log('start...');},   
-         end:function() {console.log('end...');}   
-    }});                                                
+* You may customize the player of the 'ajaxProcessReminder' and let it work for your idea. (there is a simple sample like this:)      
+
+		$('.submit').ajaxProcessReminder({player:{   
+		     start:function() {console.log('start...');},   
+		     end:function() {console.log('end...');}   
+		}});                                                
 
 [1.1]:  http://outmanone.github.com/images/proj-img/Snip20120614_5.png
 [1.2]:  http://outmanone.github.com/images/proj-img/Snip20120614_6.png

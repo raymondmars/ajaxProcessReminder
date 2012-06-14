@@ -14,8 +14,8 @@
      (the player is default player.)    
 * You may customize the player of the 'ajaxProcessReminder' and let it work for your idea.     
   (there is a simple sample like this :)    
-	$('.submit').ajaxProcessReminder({player:{   
-	   start:function() {console.log('start...');},   
-	   end:function() {console.log('end...');}   
-	}});                                                
+    $('.submit').ajaxProcessReminder({player:{   
+       start:function() {console.log('start...');},   
+       end:function() {console.log('end...');}   
+    }});                                                
 

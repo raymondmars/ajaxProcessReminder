@@ -9,12 +9,12 @@
 * ln -s {your path}/ajaxProcessReminder {your server document path}/apr    
 * Open your browser and type : http://localhost/apr/test   
 * There are two builted-in players:     
-  1. it will change the text of button or hyperlinks when you submit a ajax request on it.  
+  1. it will change the text of button or hyperlinks when you submit a ajax request by it.  
      Hyperlinks:   
 	 !['before'][1.1]  !['starting'][1.2]   
 	 Button:  
 	 !['before'][1.3]                     !['starting'][1.4]   
-  2. it will show a overlayer on the browser window when you submit a ajax request on any element.      
+  2. it will show a overlayer on the browser window when you submit a ajax request by any element.      
      (the player is default player.)    
 	 
 	 !['starting'][1.5]

@@ -16,6 +16,7 @@
 	 !['before'][1.3] --> !['starting'][1.4]   
   2. it will show a overlayer on the browser window when you submit a ajax request on any element.     
      (the player is default player.)    
+	 
 	 !['starting'][1.5]
 	 
 * You may customize the player of the 'ajaxProcessReminder' and let it work for your idea.     

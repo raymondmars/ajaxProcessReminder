@@ -10,11 +10,14 @@
 * Open your browser and type : http://localhost/apr/test   
 * There are two builted-in players:     
   1. it will change the text of button or hyperlinks when you submit a ajax request on it.  
-     !['before'](http://outmanone.github.com/images/proj-img/Snip20120614_5.png) 
-      -->   
-	 !['starting'](http://outmanone.github.com/images/proj-img/Snip20120614_5.png)  
+     Hyperlinks:   
+	 !['before'][1.1] --> !['starting'][1.2]   
+	 Button:  
+	 !['before'][1.3] --> !['starting'][1.4]   
   2. it will show a overlayer on the browser window when you submit a ajax request on any element.     
      (the player is default player.)    
+	 !['starting'][1.5]
+	 
 * You may customize the player of the 'ajaxProcessReminder' and let it work for your idea.     
   (there is a simple sample like this :)    
     $('.submit').ajaxProcessReminder({player:{   
@@ -22,3 +25,8 @@
          end:function() {console.log('end...');}   
     }});                                                
 
+[1.1]:  http://outmanone.github.com/images/proj-img/Snip20120614_5.png
+[1.2]:  http://outmanone.github.com/images/proj-img/Snip20120614_6.png
+[1.3]:  http://outmanone.github.com/images/proj-img/Snip20120614_7.png
+[1.4]:  http://outmanone.github.com/images/proj-img/Snip20120614_8.png
+[1.5]:  http://outmanone.github.com/images/proj-img/Snip20120614_9.png

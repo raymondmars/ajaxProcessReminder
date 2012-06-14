@@ -13,7 +13,7 @@
      Hyperlinks:   
 	 !['before'][1.1]  !['starting'][1.2]   
 	 Button:  
-	 !['before'][1.3]       !['starting'][1.4]   
+	 !['before'][1.3]                     !['starting'][1.4]   
   2. it will show a overlayer on the browser window when you submit a ajax request on any element.      
      (the player is default player.)    
 	 
